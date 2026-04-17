@@ -11,6 +11,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        //accessing the Song class to populate song objects with specific attributes
+        var song1 = Song("Choosin' Texas", "Ella Langley", 2026, "3.5")
+        var song2 = Song("Man I Need", "Olivia Dean", 2026, "2.5")
+        var song3 = Song("I Just Might", "Bruno Mars")
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

@@ -9,6 +9,9 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String = ""
 
+    constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, ""){
+    }
+
     //initialising variables
     init{
         name = songName
