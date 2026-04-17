@@ -1,6 +1,7 @@
 package com.example.musicapp
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        var songShowTxt = findViewById<TextView>(R.id.songDisplayId)
 
         //accessing the Song class to populate song objects with specific attributes
         var song1 = Song("Choosin' Texas", "Ella Langley", 2026, "3.5")
