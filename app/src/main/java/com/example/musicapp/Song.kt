@@ -9,8 +9,11 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String = ""
 
+    //exception for if we only know the song name and artist
     constructor(songName: String, songArtist: String) : this(songName, songArtist, 0, ""){
     }
+
+    //2nd secondary constructor
 
     //initialising variables
     init{
